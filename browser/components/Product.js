@@ -2,18 +2,18 @@ import React from 'react';
 import { Link } from 'react-router';
 
 export default function AllProducts (props) {
-	
+
   const fish = props.product;
-	
+
   return (
-  	<div>
+  	<div className="default-container">
       <h3>The Fish You Clicked</h3>
       <div className="row">
       {
           <div className="col-xs-4" key={ fish.id }>
               <button className='btn-danger'> X </button>
               <button className='btn-primary'>
-                <span className="glyphicon glyphicon-shopping-cart"></span> 
+                <span className="glyphicon glyphicon-shopping-cart"></span>
               </button>
               <img src={ fish.imageUrl } />
 
@@ -26,7 +26,7 @@ export default function AllProducts (props) {
                 </h5>
               </div>
           </div>
-        
+
       }
       </div>
     </div>
