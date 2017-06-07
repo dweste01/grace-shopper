@@ -6,7 +6,7 @@ export default function AllProducts (props) {
   const fish = props.products;
 
   return (
-  	<div id="all-products" className="container-fluid">
+  	<div className="container-fluid default-container">
       <h3>Pick a tropical fish</h3>
       <div className="row">
       {
